@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM jupyter/scipy-notebook
-WORKDIR /code
+WORKDIR WORKDIR /home/user/repo
 USER root
 RUN RUN apt update && apt -y upgrade && apt -y install git
 COPY requirements.txt requirements.txt
