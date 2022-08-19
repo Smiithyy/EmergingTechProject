@@ -1,5 +1,6 @@
-pandas
+qiskit[visualization]
 numpy
 matplotlib
 sklearn
-qiskit[visualization]
+seaborn
+pandas
