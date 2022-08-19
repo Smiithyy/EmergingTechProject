@@ -1,8 +1,12 @@
 version: "3.9"
 services:
-  web:
+  jupyter:
     build: .
+    image: jupyter-qiskit
     ports:
-      - "8000:8000"
-  redis:
-    image: "redis:alpine"
+      - "8888:8888"
+    volumes:
+      - .:/home/user/repo
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      GRANT_SUDO: "yes"
