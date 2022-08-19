@@ -1,8 +1,8 @@
-# syntax=docker/dockerfile:1
 FROM jupyter/scipy-notebook
-WORKDIR WORKDIR /home/user/repo
+WORKDIR /home/smiithyy/repo
 USER root
-RUN RUN apt update && apt -y upgrade && apt -y install git
+RUN apt update && apt -y upgrade && apt -y install git
+USER smiithyy
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 8888
